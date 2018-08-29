@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    import_module.py
+    importer.py
     ~~~~~~~~~~~~~~~~~~~
     
     :author: Finger
@@ -10,6 +10,6 @@
 from importlib import import_module
 
 
-def import_module(modules):
+def import_modules(modules):
     for mod in modules:
         import_module(mod)

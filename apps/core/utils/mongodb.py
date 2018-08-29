@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    update_db_collection.py
+    update_collection.py
     ~~~~~~~~~~~~~~~~~~~
     
     :author: Finger
@@ -10,7 +10,7 @@ from apps.models.collection import collections
 from apps.core.logger.logging import start_logger
 
 
-def update(db_sys, db_site, db_user):
+def update_collections(db_sys, db_site, db_user):
     dbs = {
         "sys": db_sys,
         "site": db_site,
