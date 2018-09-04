@@ -18,6 +18,7 @@ from apps.core.flask.myflask import App
 from apps.core.flask.cache import Cache
 from apps.core.db.mongodb import PyMongo
 from apps.core.logger.logging import Logger, start_logger
+from apps.core.flask.rest_session import RestSession
 from apps.configs.db_config import DB_CONFIG
 
 
@@ -34,6 +35,7 @@ start_logger.info("Initialize third-party libraries")
 csrf = CSRFProtect()
 login_manager = LoginManager()
 session = Session()
+rest_session = RestSession()
 
 mail = Mail()
 logger = Logger()
